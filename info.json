@@ -1,0 +1,16 @@
+{
+  "name": "mts-cave-teams",
+  "version": "0.1.0",
+  "title": "Cave Teams (MTS)",
+  "author": "bits-orio",
+  "contact": "",
+  "homepage": "",
+  "factorio_version": "2.1",
+  "description": "Requires Multi-Team Support (MTS) and The Cave. Every multiplayer team digs its own cave: starter bases land on each team's own map, a defeat resets or disbands only that team, and pauses, staged starts and spectators work with The Cave.",
+  "dependencies": [
+    "base",
+    "multi-team-support >= 0.7.9",
+    "the-cave >= 3.3.2",
+    "! the-cave-mts-compat"
+  ]
+}
