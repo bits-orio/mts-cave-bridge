@@ -8,7 +8,7 @@ This bridge requires [Multi-Team Support](https://mods.factorio.com/mod/multi-te
 
 ## Status
 
-Tested on a server with joined clients on Factorio 2.1.23, with Multi-Team Support 0.7.10 and The Cave 3.3.6: the default mode, Train Interiors and Shelter Defense, with and without Space Age. CAVETORIO is a single-force mode of The Cave and stays that way. Report anything odd on [Discord](https://discord.gg/tWz4FT74pH) or in the [issue tracker](https://github.com/bits-orio/mts-cave-bridge/issues).
+Work in progress: this is an early release (0.1.0), so expect rough edges and keep a backup of any long-running map. Tested on a server with joined clients on Factorio 2.1.23, with Multi-Team Support 0.7.10 and The Cave 3.3.6: the default mode, Train Interiors and Shelter Defense, with and without Space Age. CAVETORIO is a single-force mode of The Cave and stays that way. Report anything odd on [Discord](https://discord.gg/tWz4FT74pH) or in the [issue tracker](https://github.com/bits-orio/mts-cave-bridge/issues).
 
 ## Quick start
 
@@ -23,11 +23,11 @@ Tested on a server with joined clients on Factorio 2.1.23, with Multi-Team Suppo
 - A team's train interiors, shelter, gardens and child caves are that team's surfaces in MTS: other teams are kept out and their production counts for the team.
 - A team that loses its Main Train or shelter is reset on its own. The other teams play on.
 - Map setting "Disband a defeated team" sends the losing team back to the landing pen and frees its slot, with one chat line saying why.
-- MTS pauses, staged starts and spectating work with The Cave: a paused team stays dark, and a team that has not pressed Start Playing gets no base yet.
+- MTS pauses, staged starts and spectating work with The Cave: a paused team is frozen, interiors included, and a team that has not pressed Start Playing gets no base yet.
 
 ## Compatibility
 
-Needs Factorio 2.1.23 or newer. Space Age is optional. Do not install it together with The Cave MTS Compat (`the-cave-mts-compat`): both would answer The Cave's team questions, so the game refuses to load the pair.
+Needs Factorio 2.1.23 or newer. Space Age is optional.
 
 The Cave is made by behroozzx. This bridge is a separate mod, written with the author's knowledge and agreement, and contains none of The Cave's code.
 

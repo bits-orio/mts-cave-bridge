@@ -22,6 +22,7 @@ local function subscribe()
     if owned then
         script.on_event(owned, interiors.on_owned_surface_changed)
     else
+        script.on_event(defines.events.on_chunk_generated, interiors.on_chunk_generated)
         script.on_event(defines.events.on_player_changed_surface, interiors.on_player_changed_surface)
     end
 end

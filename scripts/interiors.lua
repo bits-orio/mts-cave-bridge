@@ -14,6 +14,8 @@ local teams    = require("scripts.teams")
 
 local interiors = {}
 
+local CAVE_PREFIX = "the-cave-"
+
 function interiors.register(force_index, surface_name)
     local force = game.forces[force_index]
     if not (force and force.valid and teams.is_team(force.name)) then return end
@@ -50,6 +52,24 @@ end
 function interiors.on_player_changed_surface(event)
     local player = game.get_player(event.player_index)
     if player and teams.is_team(player.force.name) then interiors.register_force(player.force) end
+end
+
+--- Fallback for a Cave without on_owned_surface_changed: The Cave names the
+--- surfaces it builds "the-cave-...", and a first chunk generating on one that
+--- MTS has no owner for means The Cave has just built it for some team.
+function interiors.on_chunk_generated(event)
+    local name = event.surface.name
+    if name:sub(1, #CAVE_PREFIX) ~= CAVE_PREFIX then return end
+    if remote.call("mts-v1", "get_surface_owner", name) then return end
+    for _, force in pairs(game.forces) do
+        if teams.is_team(force.name) then
+            for _, owned in pairs(cave_api.owned_surfaces(force.index)) do
+                -- The whole team: its other new rooms may have generated
+                -- before The Cave listed them.
+                if owned == name then return interiors.register_force(force) end
+            end
+        end
+    end
 end
 
 return interiors

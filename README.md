@@ -12,8 +12,7 @@ Plays [The Cave](https://mods.factorio.com/mod/the-cave) with [Multi-Team Suppor
 
 - Factorio 2.1.23 or newer; Space Age is optional.
 - Multi-Team Support 0.7.10 or newer.
-- The Cave 3.3.6 or newer. When The Cave publishes `on_owned_surface_changed` through `the-cave-v1`, interiors are registered the moment The Cave builds them; with 3.3.6 they are registered when a team player next changes surface, which is at the latest when someone steps inside.
-- Do not install it together with The Cave MTS Compat (`the-cave-mts-compat`): both would answer The Cave's adapter.
+- The Cave 3.3.6 or newer. When The Cave publishes `on_owned_surface_changed` through `the-cave-v1`, interiors are registered the moment The Cave builds them; with 3.3.6 they are registered when their first chunk generates or when a team player next changes surface, which is at the latest when someone steps inside.
 
 ## Development
 
