@@ -215,7 +215,7 @@ jobs:
       # "Upload to Mod Portal" workflow (mod-portal-upload.yml).
       #
       # NOTE: the upload API adds a *release* to an *existing* mod page. The
-      # `mts-cave-teams` page must be created once on mods.factorio.com by hand
+      # `mts-cave-bridge` page must be created once on mods.factorio.com by hand
       # before the first portal upload can succeed.
       - name: Upload to Factorio mod portal
         id: upload

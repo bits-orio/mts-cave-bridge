@@ -1,0 +1,9 @@
+{
+  "name": "mcb-scenario-test",
+  "version": "1.0.0",
+  "title": "MTS Cave Bridge scenario test (dev only)",
+  "author": "test harness",
+  "factorio_version": "2.1",
+  "description": "Drives and checks dev/run-scenarios.sh. Never shipped.",
+  "dependencies": ["base", "multi-team-support", "the-cave", "mts-cave-bridge"]
+}

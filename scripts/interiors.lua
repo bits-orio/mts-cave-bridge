@@ -1,4 +1,4 @@
--- MTS Cave Teams - scripts/interiors.lua
+-- MTS Cave Bridge - scripts/interiors.lua
 -- Author: bits-orio
 -- License: MIT
 --
@@ -22,7 +22,7 @@ function interiors.register(force_index, surface_name)
     if remote.call("mts-v1", "create_team_surface", force.name, spec) then
         remote.call("mts-v1", "set_spawn_label_enabled", surface_name, false)
     else
-        log("[MTS Cave Teams] MTS refused " .. surface_name .. " for " .. force.name .. " (another team owns it)")
+        log("[MTS Cave Bridge] MTS refused " .. surface_name .. " for " .. force.name .. " (another team owns it)")
     end
 end
 

@@ -1,4 +1,4 @@
--- MTS Cave Teams - scripts/defeat.lua
+-- MTS Cave Bridge - scripts/defeat.lua
 -- Author: bits-orio
 -- License: MIT
 --
@@ -12,11 +12,11 @@ local teams = require("scripts.teams")
 
 local defeat = {}
 
-local SETTING = "mts-cave-teams-disband-on-defeat"
+local SETTING = "mts-cave-bridge-disband-on-defeat"
 
 local REASON = {
-    ["main-train-destroyed"] = "mts-cave-teams.reason-main-train",
-    ["shelter-destroyed"]    = "mts-cave-teams.reason-shelter",
+    ["main-train-destroyed"] = "mts-cave-bridge.reason-main-train",
+    ["shelter-destroyed"]    = "mts-cave-bridge.reason-shelter",
 }
 
 function defeat.on_force_defeated(event)
@@ -26,7 +26,7 @@ function defeat.on_force_defeated(event)
     if not teams.is_team(name) then return end
     local info = remote.call("mts-v1", "get_team_info", name)
     if not (info and info.is_occupied) then return end
-    game.print({ "mts-cave-teams.team-defeated", teams.label(name), { REASON[event.reason] or "mts-cave-teams.reason-other" } })
+    game.print({ "mts-cave-bridge.team-defeated", teams.label(name), { REASON[event.reason] or "mts-cave-bridge.reason-other" } })
     remote.call("mts-v1", "disband_team", name, { quiet = true })
 end
 

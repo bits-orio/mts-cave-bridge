@@ -1,11 +1,11 @@
 {
-  "mod": "mts-cave-teams",
-  "title": "Cave Teams (MTS)",
+  "mod": "mts-cave-bridge",
+  "title": "MTS Bridge for The Cave",
   "summary": "Play The Cave with Multi-Team Support (MTS): every multiplayer team digs its own cave on its own map. Requires both mods. Main Trains, shelters and interiors belong to the team that owns them, a defeat resets or disbands only the team that lost, and MTS pauses, staged starts and spectators work underground.",
   "category": "utilities",
   "tags": [],
   "tags_intentionally_empty": "A bridge between two mods: it adds no content of its own, so no portal tag describes it.",
   "license": "default_mit",
   "homepage": "https://discord.gg/tWz4FT74pH",
-  "source_url": "https://github.com/bits-orio/mts-cave-teams"
+  "source_url": "https://github.com/bits-orio/mts-cave-bridge"
 }

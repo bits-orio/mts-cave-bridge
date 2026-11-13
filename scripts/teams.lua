@@ -1,4 +1,4 @@
--- MTS Cave Teams - scripts/teams.lua
+-- MTS Cave Bridge - scripts/teams.lua
 -- Author: bits-orio
 -- License: MIT
 --

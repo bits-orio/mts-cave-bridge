@@ -1,4 +1,4 @@
-# MTS Cave Teams
+# MTS Bridge for The Cave
 
 Plays [The Cave](https://mods.factorio.com/mod/the-cave) with [Multi-Team Support (MTS)](https://mods.factorio.com/mod/multi-team-support): every team digs its own copy of the cave. Neither mod knows the other; this one connects them.
 

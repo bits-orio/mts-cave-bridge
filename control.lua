@@ -1,4 +1,4 @@
--- MTS Cave Teams - control.lua
+-- MTS Cave Bridge - control.lua
 -- Author: bits-orio
 -- License: MIT
 --

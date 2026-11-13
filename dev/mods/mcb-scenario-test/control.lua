@@ -1,16 +1,16 @@
--- mct-scenario-test: the dev-only driver behind dev/run-scenarios.sh.
+-- mcb-scenario-test: the dev-only driver behind dev/run-scenarios.sh.
 --
--- Steps arrive as "/mctt <step> [arg]" on the server console. Every check
+-- Steps arrive as "/mcbt <step> [arg]" on the server console. Every check
 -- logs one line,
---   MCT_TEST PASS <name>: <detail>    or    MCT_TEST FAIL <name>: <detail>
--- and every step ends with "MCT_TEST STEP <name>", which the runner waits for.
+--   MCB_TEST PASS <name>: <detail>    or    MCB_TEST FAIL <name>: <detail>
+-- and every step ends with "MCB_TEST STEP <name>", which the runner waits for.
 --
 -- Handlers are registered unconditionally at parse time, and the other mods'
 -- events from their ids on every session, so a joining client always matches
 -- the server.
 
-local TAG = "MCT_TEST "
-local ADAPTER = "mts-cave-teams-adapter"
+local TAG = "MCB_TEST "
+local ADAPTER = "mts-cave-bridge-adapter"
 local TRAIN = settings.startup["the-cave-train-interiors"].value == "enabled"
 local SHELTER = settings.startup["the-cave-shelter-defense"].value == "enabled"
 
@@ -175,7 +175,7 @@ end
 --- MTS pauses the team; two seconds later The Cave must not have relit it.
 STEPS["pause"] = function(a)
     local team = a.arg
-    check("pause-call " .. team, mts("pause_team", team, { holder = "mct-test" }) == true)
+    check("pause-call " .. team, mts("pause_team", team, { holder = "mcb-test" }) == true)
     check("adapter-reads-paused " .. team, adapter("force_paused", game.forces[team].index) == true)
     later(120, "pause-held", { arg = team })
 end
@@ -193,7 +193,7 @@ end
 
 STEPS["resume"] = function(a)
     local team = a.arg
-    mts("unpause_team", team, { holder = "mct-test" })
+    mts("unpause_team", team, { holder = "mcb-test" })
     check("adapter-reads-running " .. team, adapter("force_paused", game.forces[team].index) == false)
     check("mts-resumed " .. team, mts("is_team_paused", team) == false)
     step("resume", team)
@@ -289,7 +289,7 @@ script.on_event(defines.events.on_tick, function(e)
     for _, item in ipairs(due) do run(item.name, item.args) end
 end)
 
-commands.add_command("mctt", "dev test steps (mct-scenario-test)", function(c)
+commands.add_command("mcbt", "dev test steps (mcb-scenario-test)", function(c)
     local name, rest = (c.parameter or ""):match("^(%S+)%s*(.*)$")
     run(name or "", { arg = rest })
 end)

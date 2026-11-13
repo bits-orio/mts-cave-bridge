@@ -1,9 +1,9 @@
 {
-  "name": "mts-cave-teams",
+  "name": "mts-cave-bridge",
   "version": "0.1.0",
-  "title": "Cave Teams (MTS)",
+  "title": "MTS Bridge for The Cave",
   "author": "bits-orio",
-  "homepage": "https://github.com/bits-orio/mts-cave-teams",
+  "homepage": "https://github.com/bits-orio/mts-cave-bridge",
   "factorio_version": "2.1",
   "description": "Play The Cave with Multi-Team Support (MTS): every multiplayer team digs its own cave on its own map. Requires both mods. Main Trains, shelters and interiors belong to the team that owns them, a defeat resets or disbands only the team that lost, and MTS pauses, staged starts and spectators work underground.",
   "dependencies": [

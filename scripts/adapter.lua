@@ -1,4 +1,4 @@
--- MTS Cave Teams - scripts/adapter.lua
+-- MTS Cave Bridge - scripts/adapter.lua
 -- Author: bits-orio
 -- License: MIT
 --
@@ -13,7 +13,7 @@ local teams = require("scripts.teams")
 
 local adapter = {}
 
-adapter.INTERFACE = "mts-cave-teams-adapter"
+adapter.INTERFACE = "mts-cave-bridge-adapter"
 
 local function force_name(force_index)
     local force = game.forces[force_index]

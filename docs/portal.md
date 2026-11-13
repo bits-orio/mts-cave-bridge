@@ -1,14 +1,14 @@
-# Cave Teams (MTS)
+# MTS Bridge for The Cave
 
 > Every team digs its own cave.
 
-[![Discord](https://img.shields.io/badge/Discord-join%20the%20server-5865F2?logo=discord&logoColor=white)](https://discord.gg/tWz4FT74pH) [![GitHub](https://img.shields.io/badge/GitHub-source-181717?logo=github&logoColor=white)](https://github.com/bits-orio/mts-cave-teams)
+[![Discord](https://img.shields.io/badge/Discord-join%20the%20server-5865F2?logo=discord&logoColor=white)](https://discord.gg/tWz4FT74pH) [![GitHub](https://img.shields.io/badge/GitHub-source-181717?logo=github&logoColor=white)](https://github.com/bits-orio/mts-cave-bridge)
 
-Cave Teams requires [Multi-Team Support](https://mods.factorio.com/mod/multi-team-support) and [The Cave](https://mods.factorio.com/mod/the-cave), and lets a server run them together. Each team claims a slot in the MTS landing pen and lands in its own copy of the cave, with its own Main Train or shelter, its own research and its own enemies. Teams race on the same map without ever meeting underground.
+This bridge requires [Multi-Team Support](https://mods.factorio.com/mod/multi-team-support) and [The Cave](https://mods.factorio.com/mod/the-cave), and lets a server run them together. Each team claims a slot in the MTS landing pen and lands in its own copy of the cave, with its own Main Train or shelter, its own research and its own enemies. Teams race on the same map without ever meeting underground.
 
 ## Status
 
-Tested on a server with joined clients on Factorio 2.1.23, with Multi-Team Support 0.7.10 and The Cave 3.3.6: the default mode, Train Interiors and Shelter Defense, with and without Space Age. CAVETORIO is a single-force mode of The Cave and stays that way. Report anything odd on [Discord](https://discord.gg/tWz4FT74pH) or in the [issue tracker](https://github.com/bits-orio/mts-cave-teams/issues).
+Tested on a server with joined clients on Factorio 2.1.23, with Multi-Team Support 0.7.10 and The Cave 3.3.6: the default mode, Train Interiors and Shelter Defense, with and without Space Age. CAVETORIO is a single-force mode of The Cave and stays that way. Report anything odd on [Discord](https://discord.gg/tWz4FT74pH) or in the [issue tracker](https://github.com/bits-orio/mts-cave-bridge/issues).
 
 ## Quick start
 
@@ -41,11 +41,11 @@ Part of the MTS family:
 
 ## Links
 
-- [README](https://github.com/bits-orio/mts-cave-teams/blob/main/README.md)
+- [README](https://github.com/bits-orio/mts-cave-bridge/blob/main/README.md)
 - [Community Discord](https://discord.gg/tWz4FT74pH)
 
 ## Development
 
-Developed with AI coding assistants alongside human review and in-game testing. Issues and pull requests are welcome on [GitHub](https://github.com/bits-orio/mts-cave-teams).
+Developed with AI coding assistants alongside human review and in-game testing. Issues and pull requests are welcome on [GitHub](https://github.com/bits-orio/mts-cave-bridge).
 
 License: MIT
