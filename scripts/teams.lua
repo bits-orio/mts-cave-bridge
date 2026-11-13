@@ -11,10 +11,12 @@ function teams.is_team(force_name)
     return type(force_name) == "string" and force_name:match("^team%-%d+$") ~= nil
 end
 
---- The force a player plays for: their own team even while spectating another.
+--- The team a player plays for: their own even while spectating another.
+--- nil for a player on no team (waiting in the landing pen).
 --- @return string|nil force name
 function teams.effective_force(player_index)
-    return remote.call("mts-v1", "get_effective_force", player_index)
+    local name = remote.call("mts-v1", "get_effective_force", player_index)
+    return teams.is_team(name) and name or nil
 end
 
 --- A team that is claimed and whose clock runs (staged start: the leader has

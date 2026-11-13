@@ -3,14 +3,13 @@
   "version": "0.1.0",
   "title": "Cave Teams (MTS)",
   "author": "bits-orio",
-  "contact": "",
-  "homepage": "",
+  "homepage": "https://github.com/bits-orio/mts-cave-teams",
   "factorio_version": "2.1",
-  "description": "Requires Multi-Team Support (MTS) and The Cave. Every multiplayer team digs its own cave: starter bases land on each team's own map, a defeat resets or disbands only that team, and pauses, staged starts and spectators work with The Cave.",
+  "description": "Play The Cave with Multi-Team Support (MTS): every multiplayer team digs its own cave on its own map. Requires both mods. Main Trains, shelters and interiors belong to the team that owns them, a defeat resets or disbands only the team that lost, and MTS pauses, staged starts and spectators work underground.",
   "dependencies": [
-    "base",
-    "multi-team-support >= 0.7.9",
-    "the-cave >= 3.3.2",
+    "base >= 2.1.23",
+    "multi-team-support >= 0.7.10",
+    "the-cave >= 3.3.6",
     "! the-cave-mts-compat"
   ]
 }

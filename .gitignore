@@ -1,1 +1,8 @@
 /.run/
+# Build output
+/build/
+/*.zip
+
+# Python bytecode from tools/ scripts
+__pycache__/
+*.pyc
