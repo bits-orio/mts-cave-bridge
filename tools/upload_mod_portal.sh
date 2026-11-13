@@ -87,7 +87,9 @@ PUBLISH_FIELDS=()
 if [[ "$MOD_EXISTS" -eq 0 ]]; then
     META=tools/portal_meta.json
     if [[ -f "$META" ]]; then
-        for field in title summary category license homepage source_url; do
+        # init_publish takes only these; title and summary come from info.json,
+        # the homepage from the page sync that follows.
+        for field in category license source_url; do
             value=$(jq -r --arg f "$field" '.[$f] // empty' "$META")
             [[ -n "$value" ]] && PUBLISH_FIELDS+=(--form-string "${field}=${value}")
         done
