@@ -2,13 +2,13 @@
 
 > Every team digs its own cave.
 
-[![Discord](https://img.shields.io/badge/Discord-join%20the%20server-5865F2?logo=discord&logoColor=white)](https://discord.gg/tWz4FT74pH) [![GitHub](https://img.shields.io/badge/GitHub-source-181717?logo=github&logoColor=white)](https://github.com/bits-orio/mts-cave-bridge)
+[![MTS Discord](https://img.shields.io/badge/Discord-MTS%20server-5865F2?logo=discord&logoColor=white)](https://discord.gg/tWz4FT74pH) [![GitHub](https://img.shields.io/badge/GitHub-source-181717?logo=github&logoColor=white)](https://github.com/bits-orio/mts-cave-bridge)
 
 This bridge requires [Multi-Team Support](https://mods.factorio.com/mod/multi-team-support) and [The Cave](https://mods.factorio.com/mod/the-cave), and lets a server run them together. Each team claims a slot in the MTS landing pen and lands in its own copy of the cave, with its own Main Train or shelter, its own research and its own enemies. Teams race on the same map without ever meeting underground.
 
 ## Status
 
-Work in progress: this is an early release (0.1.0), so expect rough edges and keep a backup of any long-running map. Tested on a server with joined clients on Factorio 2.1.23, with Multi-Team Support 0.7.10 and The Cave 3.3.6: the default mode, Train Interiors and Shelter Defense, with and without Space Age. CAVETORIO is a single-force mode of The Cave and stays that way. Report anything odd on [Discord](https://discord.gg/tWz4FT74pH) or in the [issue tracker](https://github.com/bits-orio/mts-cave-bridge/issues).
+Work in progress: this is an early release (0.1.0), so expect rough edges and keep a backup of any long-running map. Tested on a server with joined clients on Factorio 2.1.23, with Multi-Team Support 0.7.10 and The Cave 3.3.6: the default mode, Train Interiors and Shelter Defense, with and without Space Age. CAVETORIO is a single-force mode of The Cave and stays that way. Report anything odd on the [MTS Discord server](https://discord.gg/tWz4FT74pH) or in the [issue tracker](https://github.com/bits-orio/mts-cave-bridge/issues).
 
 ## Quick start
 
@@ -31,7 +31,7 @@ Needs Factorio 2.1.23 or newer. Space Age is optional.
 
 ## Credits
 
-[The Cave](https://mods.factorio.com/mod/the-cave) is made by [behroozzx](https://mods.factorio.com/user/behroozzx). Thank you, behroozzx, for building The Cave and for keeping it open to other mods through its `the-cave-v1` interface. All of the cave gameplay is their work, and the thumbnail uses The Cave's art.
+[The Cave](https://mods.factorio.com/mod/the-cave) is made by [behroozzx](https://mods.factorio.com/user/behroozzx). Thank you, behroozzx, for building The Cave and for keeping it open to other mods through its `the-cave-v1` interface. All of the cave gameplay is their work, and the thumbnail uses The Cave's art. The Cave has its own [Discord server](https://discord.gg/Bt5baFzcd).
 
 This bridge is a separate mod, written with the author's knowledge and agreement, and contains none of The Cave's code.
 
@@ -46,7 +46,8 @@ Part of the MTS family:
 ## Links
 
 - [README](https://github.com/bits-orio/mts-cave-bridge/blob/main/README.md)
-- [Community Discord](https://discord.gg/tWz4FT74pH)
+- [MTS Discord server](https://discord.gg/tWz4FT74pH), for Multi-Team Support and this bridge
+- [The Cave's Discord server](https://discord.gg/Bt5baFzcd), for The Cave itself
 
 ## Development
 

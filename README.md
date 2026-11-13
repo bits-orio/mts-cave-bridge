@@ -18,6 +18,8 @@ Plays [The Cave](https://mods.factorio.com/mod/the-cave) with [Multi-Team Suppor
 
 [The Cave](https://mods.factorio.com/mod/the-cave) is made by [behroozzx](https://mods.factorio.com/user/behroozzx). Thank you, behroozzx, for building The Cave and for keeping it open to other mods through its `the-cave-v1` interface. All of the cave gameplay is their work, and the thumbnail uses The Cave's art. This bridge contains none of The Cave's code.
 
+Discord: the [MTS Discord server](https://discord.gg/tWz4FT74pH) for Multi-Team Support and this bridge, and [The Cave's Discord server](https://discord.gg/Bt5baFzcd) for The Cave itself.
+
 ## Development
 
 - `dev/run-tests.sh`: headless checks of the adapter and interior registration, base and Space Age.
