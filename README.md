@@ -14,6 +14,10 @@ Plays [The Cave](https://mods.factorio.com/mod/the-cave) with [Multi-Team Suppor
 - Multi-Team Support 0.7.10 or newer.
 - The Cave 3.3.6 or newer. When The Cave publishes `on_owned_surface_changed` through `the-cave-v1`, interiors are registered the moment The Cave builds them; with 3.3.6 they are registered when their first chunk generates or when a team player next changes surface, which is at the latest when someone steps inside.
 
+## Credits
+
+[The Cave](https://mods.factorio.com/mod/the-cave) is made by [behroozzx](https://mods.factorio.com/user/behroozzx). Thank you, behroozzx, for building The Cave and for keeping it open to other mods through its `the-cave-v1` interface. All of the cave gameplay is their work, and the thumbnail uses The Cave's art. This bridge contains none of The Cave's code.
+
 ## Development
 
 - `dev/run-tests.sh`: headless checks of the adapter and interior registration, base and Space Age.

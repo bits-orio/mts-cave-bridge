@@ -29,7 +29,11 @@ Work in progress: this is an early release (0.1.0), so expect rough edges and ke
 
 Needs Factorio 2.1.23 or newer. Space Age is optional.
 
-The Cave is made by behroozzx. This bridge is a separate mod, written with the author's knowledge and agreement, and contains none of The Cave's code.
+## Credits
+
+[The Cave](https://mods.factorio.com/mod/the-cave) is made by [behroozzx](https://mods.factorio.com/user/behroozzx). Thank you, behroozzx, for building The Cave and for keeping it open to other mods through its `the-cave-v1` interface. All of the cave gameplay is their work, and the thumbnail uses The Cave's art.
+
+This bridge is a separate mod, written with the author's knowledge and agreement, and contains none of The Cave's code.
 
 ## Works with
 
