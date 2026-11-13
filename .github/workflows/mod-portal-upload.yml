@@ -26,7 +26,10 @@ jobs:
       FACTORIO_API_KEY: ${{ secrets.FACTORIO_API_KEY }}
       DISCORD_ANNOUNCEMENTS_WEBHOOK: ${{ secrets.DISCORD_ANNOUNCEMENTS_WEBHOOK }}
     steps:
+      # Full history with tags: the steps below read info.json from the tag.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Resolve tag
         id: tag
