@@ -4,7 +4,10 @@
 
 local ADAPTER = "mts-cave-bridge-adapter"
 
+local failures = 0
+
 local function check(name, ok, detail)
+    if not ok then failures = failures + 1 end
     log("MCB_TEST " .. (ok and "PASS " or "FAIL ") .. name .. (ok and "" or (": " .. tostring(detail))))
 end
 
@@ -33,7 +36,10 @@ local STEPS = {
             remote.call("mts-v1", "get_surface_owner", room.name) == "team-3",
             remote.call("mts-v1", "get_surface_owner", room.name))
     end,
-    [6] = function() log("MCB_TEST DONE") end,
+    [6] = function()
+        log("MCB_TEST DONE")
+        script.finish_test(failures == 0)   -- ends the test-mode run at once (2.1.24+)
+    end,
 }
 
 script.on_event(defines.events.on_tick, function(event)

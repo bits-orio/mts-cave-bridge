@@ -19,7 +19,7 @@
 #   calibrate join, screenshot, quit (to find the pen button)
 #
 #   usage: dev/run-scenarios.sh [session ...]   (default: all eight)
-#   HARNESS_PORT=<port>   server port (default MP_PORT in harness.conf)
+#   HARNESS_PORT=<port>   server port (default: a free port the game picks)
 #
 # Exit status is non-zero on any MCB_TEST FAIL, a missing MCB_TEST DONE, a Lua
 # or engine error, a desync or a failed step. Everything it started (client,
@@ -33,7 +33,7 @@ DEV="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 . "$DEV/vdisplay.sh"
 # shellcheck source=scenario-lib.sh
 . "$DEV/scenario-lib.sh"
-PORT="${HARNESS_PORT:-${MP_PORT:?set MP_PORT in dev/harness.conf}}"
+PORT=""   # set by scen_server_start
 TEST_MOD_DIR="$DEV/mods/mcb-scenario-test"
 PEN_BUTTON=(${PEN_BUTTON:-185 139})                 # "Start a new team" at 1280x720, UI scale 1
 WELCOME_CLOSE=(${WELCOME_CLOSE:-846 53})            # the welcome window's close button
